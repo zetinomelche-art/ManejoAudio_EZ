@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_reproducir"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnClic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagen_reproducir_audio"
+            android:onClick="PlayFirstSound"
+            app:srcCompat="@drawable/ici_clic" />
+
+        <ImageButton
+            android:id="@+id/bntAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagen_de_alarma"
+            android:onClick="PlaySecondSound"
+            app:srcCompat="@drawable/icp_alarm"
+            />
+
+        <ImageButton
+            android:id="@+id/btnExplosion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagen_de_explision"
+            android:onClick="PlayThirdSound"
+            app:srcCompat="@drawable/ico_explosion" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grabacion_desde_microfono"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Grabar audio"
+            app:srcCompat="@drawable/ico_record" />
+
+        <ImageButton
+            android:id="@+id/btnStopRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagen_de_explision"
+            app:srcCompat="@drawable/ico_stop_rec" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reproducir_la_grabacion"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Grabar audio"
+            app:srcCompat="@drawable/ico_play" />
+
+        <ImageButton
+            android:id="@+id/btnStopPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagen_de_explision"
+            app:srcCompat="@drawable/ico_stop" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ruta_y_nombre_del_archivo_grabado"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/red"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MenejoAudio_EZ</string>
+    <string name="texto_reproducir">Reproucir archivos de audio</string>
+    <string name="imagen_reproducir_audio">Imagen reproducir audio</string>
+    <string name="imagen_de_alarma">imagen de alarma</string>
+    <string name="imagen_de_explision">imagen de explision</string>
+    <string name="grabacion_desde_microfono">Grabacion desde microfono</string>
+    <string name="reproducir_la_grabacion">Reproducir la grabacion</string>
+    <string name="ruta_y_nombre_del_archivo_grabado">Ruta y nombre del archivo grabado</string>
+</resources>
